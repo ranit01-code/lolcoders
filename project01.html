@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project01</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            font-size: 30px;
+
+        }
+
+        body {
+
+            max-width: 100%;
+            background: blueviolet;
+            box-sizing: border-box;
+            margin: 200px;
+
+        }
+
+        section {
+
+            display: flex;
+            justify-content: right;
+            align-items: left;
+            background: url(image1.png);
+            position: relative;
+            height: 790px;
+            width: 1500px;
+            border: 2px solid blue;
+            margin: auto;
+            background-repeat: no-repeat;
+
+        }
+
+        .bg {
+
+            position: relative;
+            width: 940px;
+            height: 790px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        h2 {
+
+            font-size: 2em;
+
+        }
+
+        .inputbox {
+
+            position: relative;
+            margin: 30px 0;
+            padding-top: 50px;
+            height: 65px;
+            width: 710px;
+            border-bottom: 2px solid blueviolet;
+
+        }
+
+        .inputbox label {
+
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            color: black;
+            font-size: 1em;
+            pointer-events: none;
+            transition: 0.5s;
+
+        }
+
+        input:focus~label,
+        input:valid~label {
+            top: -5px;
+        }
+
+        .inputbox input {
+
+            width: 100%;
+            height: 70px;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            padding: 0px 35px 0px 5px;
+            color: blueviolet;
+
+        }
+
+        button {
+
+            width: 100%;
+            height: 90px;
+            border-radius: 40px;
+            background: blueviolet;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <section>
+
+        <Div class="bg">
+
+
+
+            <form action="">
+
+                <h2>Sign Up</h2>
+
+                <div id="text" class="inputbox">
+                    <input type="text" required>
+                    <label for="">Your Name </label>
+                </div>
+
+                <div id="email" class="inputbox">
+                    <input type="email" required>
+                    <label for="">Your Email </label>
+                </div>
+
+                <div id="password" class="inputbox">
+                    <input type="password" required>
+                    <label for="">Create password </label>
+                </div>
+
+                <br><br><button>C o n t i n u e</button>
+
+            </form>
+
+        </Div>
+
+    </section>
+
+
+</body>
+
+</html>
